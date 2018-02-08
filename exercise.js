@@ -34,6 +34,8 @@ console.log(fifthLetter);
 
 var randomFact = "All pandas in the world are on loan from China.";
 
+var worldLocator = randomFact.indexOf('world');
+console.log(worldLocator);
 
 
 /*The slice() method extracts a part of a string and returns the extracted part into a new string. This method takes 2 parameters: the starting index (position) and the ending index (position)*/
@@ -41,7 +43,8 @@ var randomFact = "All pandas in the world are on loan from China.";
 /*4. Declare a new variable named `scissorHand` that will generate a new string "are afraid" from the existing string below. Console.log your result.*/
 
 var edward = "People are afraid of me because I am different";
-
+var scissorHand = edward.slice(7, 18);
+console.log(scissorHand);
 
 
 /*The replace() method replaces a specified value with another value in a string.*/
@@ -49,7 +52,8 @@ var edward = "People are afraid of me because I am different";
 /*5. Declare a new variable named `theSifu` that will change the current string from "In order to taste my cup of water you must first fill your cup." to "In order to taste my cup of water you must first empty your cup."; Console.log your result.*/
 
 var grasshopper = "In order to taste my cup of water you must first fill your cup.";
-
+var theSifu = grasshopper.replace("fill", "empty");
+console.log(theSifu);
 
 
 /*The toLowerCase() method converts the characters in a string to lower case.*/
